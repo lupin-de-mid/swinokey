@@ -13,9 +13,9 @@ for more options.
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
 
-#define COMBO_KEYS_COUNT 1
-#define COMBO_MAX_SIZE 4
-#define COMBO_STACK_MAX_SIZE 5
+#define COMBO_KEYS_COUNT 5
+#define COMBO_MAX_SIZE 3
+#define COMBO_STACK_MAX_SIZE 3
 #define COMBO_WAIT_TIME 100
 
 #ifdef RGBLIGHT_ENABLE
