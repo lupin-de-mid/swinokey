@@ -52,10 +52,10 @@ bool tt_process_record(uint16_t key, keyrecord_t *record) {
             }
 
             tt_now_press = true;
-            press_arbitrary_keycode(tt_keys[pos][1], record->event.pressed);
+            process_record(tt_keys[pos][1], record->event.pressed);
             if (tt_count == 3 && !record->event.pressed) {
-                press_arbitrary_keycode(tt_keys[pos][2], true);
-                press_arbitrary_keycode(tt_keys[pos][2], false);
+              process_record(tt_keys[pos][2], true);
+              process_record(tt_keys[pos][2], false);
                 tt_previous_key = 0;
                 tt_count = 0;
             }
