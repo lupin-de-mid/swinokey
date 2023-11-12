@@ -1,7 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#include "arbitrary_keycode/include.h"
+//#include "arbitrary_keycode/include.h"
 #define CUSTOM_SAFE_RANGE SAFE_RANGE
+
+
+
 #include "lang_shift/include.h"
 //#include "combo/include.h"
 #include "custom_hotkeys.h"
@@ -15,13 +18,15 @@ enum sofle_layers {
     L_GREEN
 };
 
+
 #define TG_RED TG(L_RED)
+#define TT_RED TT(L_RED)
 #define MO_RED MO(L_RED)
-#define TT_RED (TT_000 + L_RED)
+//#define TT_RED (TT_000 + L_RED)
 
 #define TG_GREEN TG(L_GREEN)
 #define MO_GREEN MO(L_GREEN)
-#define TT_GREEN (TT_001 + L_GREEN)
+#define TT_GREEN TT(L_GREEN)
 
 //remap order of buutons from left right to lines
 #define MY_layout( \
@@ -267,8 +272,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 );
 
 //const ComboWithKeycode combos[] PROGMEM = {
-//    // Left Index
-//    CHORD(TG_GREEN,    /* <- */ CMB_TEST)
+//    CHORD(MO(4),         CMB_000),
 //};
 
 //const uint8_t combos_size = sizeof(combos)/sizeof(ComboWithKeycode);
