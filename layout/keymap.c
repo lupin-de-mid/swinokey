@@ -258,10 +258,10 @@ const rgblight_segment_t PROGMEM green_layer[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-    en_layer,
-    en_layer,
-    ru_layer,
-    ru_layer,
+    en_layer_l,
+    en_layer_d,
+    ru_layer_l,
+    ru_layer_d,
     red_layer,
     green_layer
 );
@@ -275,8 +275,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 const uint16_t tt_keys[][3] = {
 //   { TT_CTJ, CT_J,  CT_BSLS }, // Убийство программы, если нажать три раза, то выдаёт Ctrl+\, что убивает безоговорочно.
     { TT_RED,  MO_RED,  TG_RED },
-    { TT_GREEN,  MO_GREEN,  TG_GREEN },
-//    { TT_GREN, MO_GREN, TG_GREN },
+    { TT_GREEN,  MO_GREEN,  TG_GREEN }
 //    { TT_VIOL, MO_VIOL, TG_VIOL },
 //    { TT_GRAY, MO_GRAY, TG_GRAY },
 //    { TT_CYAN, MO_CYAN, TG_CYAN },
