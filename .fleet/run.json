@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "QMK flash sofle swinokey",
+            "program": "qmk",
+            "args": [ "flash", "-kb", "sofle", "-km" ,"swinokey"],
+            "workingDir": "qmk",
+        },
+        
+    ]
+}
