@@ -230,12 +230,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const rgblight_segment_t PROGMEM en_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, RGBLED_NUM, HSV_CYAN}
+#define HSV_CYAN_D        188, 255, 255
+#define HSV_CYAN_L        108, 255, 255
+
+const rgblight_segment_t PROGMEM en_layer_d[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, RGBLED_NUM, HSV_CYAN_D}
 );
 
-const rgblight_segment_t PROGMEM ru_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM en_layer_l[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, RGBLED_NUM, HSV_CYAN_L}
+);
+
+const rgblight_segment_t PROGMEM ru_layer_d[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, RGBLED_NUM, HSV_GOLD}
+);
+
+const rgblight_segment_t PROGMEM ru_layer_l[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, RGBLED_NUM, HSV_ORANGE}
 );
 
 const rgblight_segment_t PROGMEM red_layer[] = RGBLIGHT_LAYER_SEGMENTS(
