@@ -91,7 +91,7 @@ LAYOUT( \
 #define CT_BSPC LCTL(KC_BSPC)
 
 // Этот макрос нужен, чтобы задавать одинаковые слои (в том числе и шифтовый слой) для английского и русского языка. В итоге их отличия будут только в буквах.
-/// Позволяет задавать только изенившеяся клавиши языковые, проставляявсе сотальноеавтоматом
+/// Позволяет задавать только изенившеяся клавиши языковые, проставляя все остальное автоматом
 #define LANG_TWO_LAYERS(\
   L_DEFAULT, L_SHIFT,\
   /* Left hand */ \
@@ -181,7 +181,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /* Right hand */
         RU_N,    RU_G,    RU_SH,   RU_SC,    RU_Z,
         RU_R,    RU_O,    RU_L,    RU_D,    RU_ZH,    RU_E,
-        RU_N,    RU_M,    RU_B,    RU_JU,    RU_H,   RU_HD,
+        RU_T,    RU_SF,   RU_B,    RU_JU,    _______,   _______,
 
        /* ---------------------------- Shift layer ---------------------------- */
        /* Left hand */
@@ -192,7 +192,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /* Right hand */
         RU_S_N,    RU_S_G,    RU_S_SH,    RU_S_SC,    RU_S_Z,
         RU_S_R,    RU_S_O,    RU_S_L,     RU_S_D,     RU_S_ZH,    RU_S_E,
-        RU_S_N,    RU_S_M,    RU_S_B,     RU_S_JU,    RU_S_H,    RU_S_HD
+        RU_S_T,    RU_S_SF,    RU_S_B,     RU_S_JU,    _______,   _______
         )
 
 
