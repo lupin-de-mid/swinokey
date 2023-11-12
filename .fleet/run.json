@@ -7,6 +7,13 @@
             "args": [ "flash", "-kb", "sofle", "-km" ,"swinokey"],
             "workingDir": "qmk",
         },
+        {
+            "type": "command",
+            "name": "QMK build sofle swinokey",
+            "program": "qmk",
+            "args": [ "compile", "-kb", "sofle", "-km" ,"swinokey"],
+            "workingDir": "qmk",
+        },
         
     ]
 }
