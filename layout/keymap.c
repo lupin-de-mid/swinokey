@@ -1,5 +1,7 @@
 #include QMK_KEYBOARD_H
 
+#define EE_HANDS
+
 //#include "arbitrary_keycode/include.h"
 #define CUSTOM_SAFE_RANGE SAFE_RANGE
 
@@ -8,7 +10,7 @@
 #include "lang_shift/include.h"
 //#include "combo/include.h"
 #include "custom_hotkeys.h"
-#include "tt/include.h"
+//#include "tt/include.h"
 enum sofle_layers {
     L_EN = 0,
     L_EN_S,
@@ -400,8 +402,9 @@ bool oled_task_user(void) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 //    if (!combo_process_record(keycode, record))
 //        return false;
-    if (!tt_process_record(keycode, record))
-        return false;
+//    if (!tt_process_record(keycode, record))
+//        return false;
+
     if (!lang_shift_process_record(keycode, record))
         return false;
     if (!process_my_hotkeys(keycode, record))
