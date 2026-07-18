@@ -7,6 +7,3 @@
 [submodule "combo"]
 	path = layout/combo
 	url = https://github.com/klavarog/combo.git
-[submodule "layout/arbitrary_keycode"]
-	path = layout/arbitrary_keycode
-	url = https://github.com/klavarog/arbitrary_keycode.git
